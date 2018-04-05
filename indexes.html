@@ -203,7 +203,7 @@
 </div>
 </div>
 
-
+<div id="snackbar">Can not show example of this project due company policy privacy</div>
 
 <!--modal Checkertool-->
 <div id="modalChecker" class="modal">
@@ -282,7 +282,7 @@
 		- Java como back-end.  
 	  </p></div>
 	  <div>
-	  <button onclick="" class="btn info" id="myBtn" style="position: absolute; right: 5%; bottom:3%;">Confidencial</button>
+	  <button onclick="snackbar();" class="btn info" id="myBtn" style="position: absolute; right: 5%; bottom:3%;">Confidencial</button>
 	  </div>
 	</div>
   </div>
@@ -335,6 +335,17 @@
 	
 	function blurredBody() {
     bodi.classList.toggle("blur");
+	}
+	
+	function snackbar() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 4 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4000);
 	}
 
 </script>
