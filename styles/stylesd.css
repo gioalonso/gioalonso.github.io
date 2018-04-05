@@ -287,9 +287,7 @@ transition: transform .2s;
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
     visibility: hidden; /* Hidden by default. Visible on click */
-	box-shadow: 3px 3px 15px #004D40;
-    min-width: 250px; /* Set a default minimum width */
-    margin-left: -125px; /* Divide value of min-width by 2 */
+    box-shadow: 3px 3px 15px #004D40;
     background-color: white; /* Blue background color */
     color: 004D40; /* White text color */
     text-align: center; /* Centered text */
@@ -297,7 +295,8 @@ transition: transform .2s;
     padding: 16px; /* Padding */
     position: fixed; /* Sit on top of the screen */
     z-index: 3; /* Add a z-index if needed */
-    left: 43%; /* Center the snackbar */
+    left: 30%; /* Center the snackbar */
+    right: 30%;	
     bottom: 50px; /* 50px from the bottom */
 }
 
