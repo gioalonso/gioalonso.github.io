@@ -12,7 +12,7 @@ h4{
 }
 
 .boxshadow{
-box-shadow: 5px 5px 5px #616161;
+box-shadow: 5px 5px 15px #090909;
 }
 
 .boxblackshadow{
@@ -20,7 +20,7 @@ box-shadow: 2px 2px 5px black;
 }
 
 .topboxshadow{
-box-shadow: 0px -5px 5px #616161;
+box-shadow: 5px 5px 15px #090909;
 }
 
 .textshadow{
@@ -28,10 +28,10 @@ box-shadow: 0px -5px 5px #616161;
 }
 
 .circleshadow{
-   box-shadow: 3px 2px 10px rgba(158,158,158,0.6);
-   -moz-box-shadow: 3px 2px 10px rgba(158,158,158,0.6);
-   -webkit-box-shadow: 3px 2px 10px rgba(158,158,158,0.6); 
-   -o-box-shadow: 3px 2px 10px rgba(158,158,158,0.6);
+   box-shadow: 3px 2px 10px #090909;
+   -moz-box-shadow: 3px 2px 10px #090909;
+   -webkit-box-shadow: 3px 2px 10px #090909; 
+   -o-box-shadow: 3px 2px 10px #090909;
 }
 
 .navbar.navbar-default{
@@ -281,6 +281,55 @@ transition: transform .2s;
 @keyframes fadeIn {
 	from {opacity: 0} 
 	to {opacity: 1}
+}
+
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+	box-shadow: 3px 3px 15px #004D40;
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: white; /* Blue background color */
+    color: 004D40; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 5px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 3; /* Add a z-index if needed */
+    left: 43%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 3.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 3.5s;
+    animation: fadein 0.5s, fadeout 0.5s 3.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 50px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 50px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 50px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 50px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
 }
 
 
