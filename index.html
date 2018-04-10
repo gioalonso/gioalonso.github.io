@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -32,12 +32,12 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-	  <li><button class="btn success" onclick="window.open('indexes.html','_self');" style="margin-top:10px; margin-right:15px; padding:5px;">ES</button></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Style<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Material</a></li>
             <li><a href="indexd.html">Material Dark</a></li>
+	    <li><button class="btn success" onclick="window.open('indexes.html','_self');" style="margin-left:10px; margin-top:10px; margin-right:15px; padding:5px;">ES</button><li>	  
           </ul>
         </li>		
       </ul>
@@ -45,7 +45,7 @@
   </div>
 </nav>
 
-<div class="container row col-md-12" style="margin-top:50px; padding:45px;">
+<div class="container row col-md-12" style="margin-top:50px; padding:30px;">
 
 	<!--Panel Left-->
 	<div class="col-md-4 boxshadow" style="background:#F5F5F5; border-radius:2px; padding:30px; color:#616161; margin-top:25px;">
@@ -202,8 +202,8 @@
 <div id="snackbar">Can not show example of this project due company privacy policy</div>
 
 <!--modal Checkertool-->
-<div id="modalChecker" class="modal">
-
+<div id="modalChecker" class="modal" role="dialog">
+<div class="modal-dialog modal-md">
   <div class="modal-content">
 	<div class="modal-header">
 	  <button onclick="modalChecker.style.display = 'none'; blurredBody();" class="close">&times;</button>
@@ -227,13 +227,13 @@
 	  </div>
 	</div>
   </div>
-
+</div>
 </div>
 
 
 	<!--modal SQL-->
-<div id="modalSQL" class="modal">
-
+<div id="modalSQL" class="modal" role="dialog">
+<div class="modal-dialog modal-md">
   <div class="modal-content">
 	<div class="modal-header-blue">
 	  <button onclick="modalSQL.style.display = 'none'; blurredBody();" class="close">&times;</button>
@@ -256,12 +256,12 @@
 	  </div>
 	</div>
   </div>
-
+</div>
 </div>
 
 <!--modal SmartPlanner-->
-<div id="modalSmart" class="modal">
-
+<div id="modalSmart" class="modal" role="dialog">
+<div class="modal-dialog modal-md">
   <div class="modal-content">
 	<div class="modal-header-orange">
 	  <button onclick="modalSmart.style.display = 'none'; blurredBody();" class="close">&times;</button>
@@ -284,7 +284,7 @@
 	  </div>
 	</div>
   </div>
-
+</div>
 </div>
 
 
