@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />	
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -32,20 +32,20 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-		<li><button class="btn info" onclick="window.open('indexd.html','_self');" style="margin-top:10px; margin-right:15px; padding:5px;">EN</button></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Estilo<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="index.html">Material</a></li>
+            <li><a href="indexes.html">Material</a></li>
             <li><a href="#">Material Dark</a></li>
           </ul>
-        </li>		
+        </li>
+	<li><button class="btn info" onclick="window.open('indexd.html','_self');" style="margin-left:10px; margin-top:10px; margin-right:15px; padding:5px;">EN</button></li>      
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="container row col-md-12" style="margin-top:50px; padding:45px;">
+<div class="container row col-md-12" style="margin-top:50px; padding:30px;">
 
 	<!--Panel Left-->
 	<div class="col-md-4 boxshadow" style="background:#004D40; border-radius:2px; padding:30px; color:#E0F2F1; margin-top:25px;">
@@ -98,7 +98,7 @@
 		<br>
 		
 		<div class="zoom boxblackshadow pdfbox" style="text-align:center; padding-top:10px; padding-bottom:5px; border-radius:5px; margin-bottom:5px;">
-		<a href="docs/CV_Eng.pdf" download style="text-decoration:none;"><img src="images/pdf.png" style="max-width:60px; margin-bottom:5px;"></img><p style="font-size:14px; color:#212121;">Descarga mi curriculum<br>como un aburrido pdf</p></a>
+		<a href="docs/CV_Esp.pdf" download style="text-decoration:none;"><img src="images/pdf.png" style="max-width:60px; margin-bottom:5px;"></img><p style="font-size:14px; color:#212121;">Descarga mi curriculum<br>como un aburrido pdf</p></a>
 		</div>
 		
 	</div>
@@ -206,8 +206,8 @@
 <div id="snackbar">No puedo mostrar ejemplo de este proyecto debido a las políticas de privacidad de la empresa.</div>	
 
 <!--modal Checkertool-->
-<div id="modalChecker" class="modal">
-
+<div id="modalChecker" class="modal" role="dialog">
+<div class="modal-dialog modal-md">
   <div class="modal-content">
 	<div class="modal-header">
 	  <button onclick="modalChecker.style.display = 'none'; blurredBody();" class="close">&times;</button>
@@ -230,13 +230,13 @@
 	  </div>
 	</div>
   </div>
-
+</div>
 </div>
 
 
 	<!--modal SQL-->
-<div id="modalSQL" class="modal">
-
+<div id="modalSQL" class="modal" role="dialog">
+<div class="modal-dialog modal-md">
   <div class="modal-content">
 	<div class="modal-header-blue">
 	  <button onclick="modalSQL.style.display = 'none'; blurredBody();" class="close">&times;</button>
@@ -258,12 +258,12 @@
 	  </div>
 	</div>
   </div>
-
+</div>
 </div>
 
 <!--modal SmartPlanner-->
-<div id="modalSmart" class="modal">
-
+<div id="modalSmart" class="modal" role="dialog">
+<div class="modal-dialog modal-md">
   <div class="modal-content">
 	<div class="modal-header-orange">
 	  <button onclick="modalSmart.style.display = 'none'; blurredBody();" class="close">&times;</button>
@@ -286,7 +286,7 @@
 	  </div>
 	</div>
   </div>
-
+</div>
 </div>
 
 
