@@ -28,7 +28,9 @@ box-shadow: 5px 5px 15px #090909;
 }
 
 .circleshadow{
-   box-shadow: 3px 2px 10px #090909;
+    margin-right:25%;
+    margin-left:25%;	
+    box-shadow: 3px 2px 10px #090909;
    -moz-box-shadow: 3px 2px 10px #090909;
    -webkit-box-shadow: 3px 2px 10px #090909; 
    -o-box-shadow: 3px 2px 10px #090909;
