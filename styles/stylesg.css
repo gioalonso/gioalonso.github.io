@@ -291,14 +291,18 @@ transition: transform .2s;
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
 	-webkit-animation-name: fadeIn; /* Fade in the background */
-	-webkit-animation-duration: 0.4s;
+	-webkit-animation-duration: 1s;
 	animation-name: fadeIn;
-	animation-duration: 0.4s
+	animation-duration: 1s
 }
 
 
 /* Modal Content */
 .modal-content {
+	-webkit-animation-name: zoomIn; /* Fade in the background */
+	-webkit-animation-duration: 0.7s;
+	animation-name: zoomIn;
+	animation-duration: 0.7s	
 	position: relative;
 	bottom: 20%;
 	top:10%;
@@ -375,6 +379,40 @@ transition: transform .2s;
 @keyframes fadeIn {
 	from {opacity: 0} 
 	to {opacity: 1}
+}
+
+@-webkit-keyframes zoomIn {
+	from {
+		
+	-ms-transform: scale(0.3); /* IE 9 */
+	-webkit-transform: scale(0.3); /* Safari 3-8 */
+	transform: scale(0.3);
+		
+	} 
+	to {
+		
+	-ms-transform: scale(1); /* IE 9 */
+	-webkit-transform: scale(1); /* Safari 3-8 */
+	transform: scale(1);
+		
+	}
+}
+
+@keyframes zoomIn {
+	from {
+		
+	-ms-transform: scale(0.3); /* IE 9 */
+	-webkit-transform: scale(0.3); /* Safari 3-8 */
+	transform: scale(0.3);
+		
+	} 
+	to {
+		
+	-ms-transform: scale(1); /* IE 9 */
+	-webkit-transform: scale(1); /* Safari 3-8 */
+	transform: scale(1);
+		
+	}
 }
 
 
